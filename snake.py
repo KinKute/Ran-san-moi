@@ -42,12 +42,12 @@ def game_over():
 # hàm show_score
 def show_score(choice = 1):
     sfont = pygame.font.SysFont('consolas',20)
-    ssurf = sfont.render('Điểm của bạn: {0}'.format(score),True,black)
+    ssurf = sfont.render('Điểm: {0}'.format(score),True,black)
     srect = ssurf.get_rect()
     if choice == 1:
         srect.midtop = (70,20)
     else:
-        srect.midtop = (360,230)
+        srect.midtop = (380,230)
     gameSurface.blit(ssurf,srect)
 # vòng lặp chính
 while True:
